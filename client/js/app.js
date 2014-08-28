@@ -20,6 +20,7 @@ var app = angular.module("socketio-chat", [])
 				$scope.$apply(function() {
 					$scope.socket.emit("join", $scope.name);
 					$scope.joined = true;
+					$scope.messages.push($scope.name + " joined");
 				});
 			});
 		};
@@ -43,6 +44,6 @@ var app = angular.module("socketio-chat", [])
 			$scope.text = "";
 
 			// add message
-			$scope.messages.push(m);
+			$scope.messages.push(m.name + ": " + m.message);
 		};
 	});
