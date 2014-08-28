@@ -37,4 +37,11 @@ io.on("connection", function(socket) {
 
 		socket.broadcast.emit("join", joinName);
 	});
+
+	// on message
+	socket.on("message", function(details) {
+		console.log("message from", details.name, "-", details.message);
+
+		socket.broadcast.emit("message", details);
+	});
 });
