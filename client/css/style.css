@@ -4,6 +4,12 @@ body {
 	height: 100%;
 }
 
+html {
+	font-family: sans-serif;
+	font-size: 16px;
+	color: #999;
+}
+
 body {
 	background: radial-gradient(#eee, #ccc);
 }
@@ -12,7 +18,53 @@ body {
 	display: flex;
 }
 
+.flex-horz {
+	flex-direction: column;
+}
+
 .flex-center {
 	align-items: center;
 	justify-content: center;
+}
+
+.flex-auto {
+	flex: auto;
+}
+
+input,
+button {
+	border: none;
+	background: none;
+	padding: .4em;
+}
+
+button {
+	transition: color .4s;
+}
+button:hover,
+button:focus {
+	color: #48f;
+}
+
+.list-unstyled {
+	padding-left: 0;
+	list-style: none;
+}
+
+.chat {
+	width: 32em;
+}
+
+.chat li {
+	margin-bottom: .5em;
+}
+
+.chat .system {
+	color: #aaa;
+}
+
+.chat .name {
+	display: inline-block;
+	min-width: 5em;
+	color: #888;
 }
