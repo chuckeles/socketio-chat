@@ -7,11 +7,11 @@ var browserSync = require("browser-sync");
 var input = {};
 input.html = "client/html/**/*";
 input.js = [
-	"client/bower/angular/angular.js",
+	"bower_components/angular/angular.js",
 	"client/js/**/*.js"
 ];
 input.css = [
-	"client/bower/normalize.css/normalize.css",
+	"bower_components/normalize.css/normalize.css",
 	"client/css/**/*.css"
 ];
 
