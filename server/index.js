@@ -1,13 +1,11 @@
-var http = require("http");
-var fs   = require("fs");
+var express = require("express");
+var server = express();
 
-// create server
-var server = http.createServer(function(req, res) {
-
-});
+// routes
+server.use(express.static("client"));
 
 // listen
-var port = 2403;
+var port = 2500;
 server.listen(port, function() {
-	console.log("server listening on", port);
+	console.log("listening on", port);
 });
