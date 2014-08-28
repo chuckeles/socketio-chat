@@ -15,5 +15,17 @@
   },
   "dependencies": {
     "express": "~4.8.6"
+  },
+  "devDependencies": {
+    "gulp"             : "latest",
+    "gulp-load-plugins": "latest",
+    "gulp-concat"      : "latest",
+    "gulp-uglify"      : "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-if"          : "latest",
+    "gulp-minify-css"  : "latest",
+    "gulp-nodemon"     : "latest",
+    "gulp-sourcemaps"  : "latest",
+    "browser-sync"     : "latest"
   }
 }
