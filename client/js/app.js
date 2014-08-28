@@ -20,28 +20,28 @@ var app = angular.module("socketio-chat", [])
 				$scope.$apply(function() {
 					$scope.socket.emit("join", $scope.name);
 					$scope.joined = true;
-					$scope.messages.push($scope.name + " joined");
+					$scope.messages.push({ system: $scope.name + " joined" });
 				});
 			});
 
 			// on leave
 			$scope.socket.on("leave", function(name) {
 				$scope.$apply(function() {
-					$scope.messages.push(name + " left");
+					$scope.messages.push({ system: name + " left" });
 				});
 			});
 
 			// on join
 			$scope.socket.on("join", function(name) {
 				$scope.$apply(function() {
-					$scope.messages.push(name + " joined");
+					$scope.messages.push({ system: name + " joined" });
 				});
 			});
 
 			// on message
 			$scope.socket.on("message", function(m) {
 				$scope.$apply(function() {
-					$scope.messages.push(m.name + ": " + m.message);
+					$scope.messages.push(m);
 				});
 			});
 		};
@@ -65,6 +65,6 @@ var app = angular.module("socketio-chat", [])
 			$scope.text = "";
 
 			// add message
-			$scope.messages.push(m.name + ": " + m.message);
+			$scope.messages.push(m);
 		};
 	});

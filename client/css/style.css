@@ -54,3 +54,17 @@ button:focus {
 .chat {
 	width: 32em;
 }
+
+.chat li {
+	margin-bottom: .5em;
+}
+
+.chat .system {
+	color: #aaa;
+}
+
+.chat .name {
+	display: inline-block;
+	min-width: 5em;
+	color: #888;
+}
