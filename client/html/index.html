@@ -21,7 +21,7 @@
 
 		<!-- CHAT -->
 		<ul class="chat list-unstyled flex-auto animate-hide" data-ng-show="joined">
-			<li data-ng-repeat="m in messages">
+			<li class="animate-repeat" data-ng-repeat="m in messages">
 				<span class="system" data-ng-show="m.system">{{ m.system }}</span>
 				<span class="name" data-ng-show="m.name">{{ m.name }}:</span>
 				{{ m.message }}
