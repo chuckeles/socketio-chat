@@ -1,0 +1,31 @@
+{
+  "name": "socketio-chat",
+  "version": "0.0.0",
+  "private": true,
+  "description": "simple chat app",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chuckeles/socketio-chat.git"
+  },
+  "author": "chuckeles",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chuckeles/socketio-chat/issues"
+  },
+  "dependencies": {
+    "express": "~4.8.6"
+  },
+  "devDependencies": {
+    "gulp"             : "latest",
+    "gulp-load-plugins": "latest",
+    "gulp-concat"      : "latest",
+    "gulp-uglify"      : "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-if"          : "latest",
+    "gulp-minify-css"  : "latest",
+    "gulp-nodemon"     : "latest",
+    "gulp-sourcemaps"  : "latest",
+    "browser-sync"     : "latest"
+  }
+}
