@@ -24,6 +24,13 @@ var app = angular.module("socketio-chat", [])
 				});
 			});
 
+			// on leave
+			$scope.socket.on("leave", function(name) {
+				$scope.$apply(function() {
+					$scope.messages.push(name + " left");
+				});
+			});
+
 			// on join
 			$scope.socket.on("join", function(name) {
 				$scope.$apply(function() {
