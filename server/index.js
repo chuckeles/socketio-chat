@@ -17,3 +17,8 @@ var port = 2500;
 http.listen(port, function() {
 	console.log("listening on", port);
 });
+
+// on connection
+io.on("connection", function(socket) {
+	console.log("new guy connected");
+});
