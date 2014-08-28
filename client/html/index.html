@@ -11,7 +11,7 @@
 	</head>
 
 	<body class="flex flex-horz flex-center" data-ng-app="socketio-chat" data-ng-controller="chatCtrl">
-		<div class="flex">
+		<div class="flex" data-ng-hide="joined">
 			<input type="text" placeholder="name" data-ng-model="name">
 			<button data-ng-click="join()">join</button>
 		</div>
