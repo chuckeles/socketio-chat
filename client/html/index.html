@@ -15,8 +15,8 @@
 			<input type="text" placeholder="name" data-ng-model="name" autofocus>
 			<button>join</button>
 		</form>
-		<ul class="flex-auto" data-ng-show="joined">
-			<li data-ng-repeat="message in messages">{{ message.name }}: { message.message }}</li>
+		<ul class="chat list-unstyled flex-auto" data-ng-show="joined">
+			<li data-ng-repeat="message in messages">{{ message.name }}: {{ message.message }}</li>
 		</ul>
 		<form class="flex" data-ng-show="joined" data-ng-submit="send()">
 			<input type="text" placeholder="text" data-ng-model="text">

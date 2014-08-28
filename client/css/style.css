@@ -45,3 +45,12 @@ button:hover,
 button:focus {
 	color: #48f;
 }
+
+.list-unstyled {
+	padding-left: 0;
+	list-style: none;
+}
+
+.chat {
+	width: 32em;
+}
