@@ -1,0 +1,8 @@
+{
+	"name": "socketio-chat",
+	"version": "0.0.0",
+	"homepage": "https://github.com/chuckeles/socketio-chat",
+	"authors": "chuckeles",
+	"license": "MIT",
+	"private": true
+}
