@@ -17,8 +17,10 @@ var app = angular.module("socketio-chat", [])
 
 			// on connect
 			$scope.socket.on("connect", function() {
-				$scope.socket.emit("join", $scope.name);
-				$scope.joined = true;
+				$scope.$apply(function() {
+					$scope.socket.emit("join", $scope.name);
+					$scope.joined = true;
+				});
 			});
 		};
 
