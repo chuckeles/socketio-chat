@@ -39,6 +39,7 @@ gulp.task("js", function() {
 	return gulp.src(input.js)
 		.pipe(plugins.sourcemaps.init())
 		.pipe(plugins.concat("script.min.js"))
+		.pipe(plugins.ngAnnotate())
 		.pipe(plugins.uglify().on("error", function(e) {
 			console.log("\x07", e.message);
 			return this.end();

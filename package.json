@@ -22,6 +22,7 @@
     "gulp-load-plugins": "latest",
     "gulp-concat": "latest",
     "gulp-uglify": "latest",
+    "gulp-ng-annotate": "latest",
     "gulp-autoprefixer": "latest",
     "gulp-if": "latest",
     "gulp-minify-css": "latest",
