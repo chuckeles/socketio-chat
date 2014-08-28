@@ -34,5 +34,7 @@ io.on("connection", function(socket) {
 	socket.on("join", function(joinName) {
 		console.log(joinName, "joined");
 		name = joinName;
+
+		socket.broadcast.emit("join", joinName);
 	});
 });
