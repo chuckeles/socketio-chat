@@ -12,12 +12,17 @@ body {
 	display: flex;
 }
 
+.flex-horz {
+	flex-direction: column;
+}
+
 .flex-center {
 	align-items: center;
 	justify-content: center;
 }
 
-input {
+input,
+button {
 	border: none;
 	background: none;
 	padding: .4em;
