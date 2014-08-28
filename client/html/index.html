@@ -11,18 +11,20 @@
 	</head>
 
 	<body class="flex flex-horz flex-center" data-ng-app="socketio-chat" data-ng-controller="chatCtrl">
-		<form id="name-form" class="flex show" data-ng-hide="joined" data-ng-submit="join()">
-			<input type="text" placeholder="name" data-ng-model="name">
-			<button>join</button>
-		</form>
-		<ul class="chat list-unstyled flex-auto" data-ng-show="joined">
+		<div class="name-form animate-hide" data-ng-hide="joined">
+			<form id="name-form" class="flex full flex-center show" data-ng-submit="join()">
+				<input type="text" placeholder="name" data-ng-model="name">
+				<button>join</button>
+			</form>
+		</div>
+		<ul class="chat list-unstyled flex-auto animate-hide" data-ng-show="joined">
 			<li data-ng-repeat="m in messages">
 				<span class="system" data-ng-show="m.system">{{ m.system }}</span>
 				<span class="name" data-ng-show="m.name">{{ m.name }}:</span>
 				{{ m.message }}
 			</li>
 		</ul>
-		<form class="flex" data-ng-show="joined" data-ng-submit="send()">
+		<form class="flex animate-hide" data-ng-show="joined" data-ng-submit="send()">
 			<input type="text" placeholder="text" data-ng-model="text">
 			<button>send</button>
 		</form>

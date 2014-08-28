@@ -12,6 +12,12 @@ html {
 
 body {
 	background: radial-gradient(#eee, #ccc);
+	position: relative;
+}
+
+.full {
+	width: 100%;
+	height: 100%;
 }
 
 .flex {
@@ -39,11 +45,19 @@ button {
 }
 
 button {
-	transition: color .4s;
+	transition: color .6s;
 }
 button:hover,
 button:focus {
 	color: #48f;
+}
+
+.name-form {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
 .list-unstyled {
@@ -69,10 +83,10 @@ button:focus {
 	color: #888;
 }
 
-.show {
-	opacity: 0;
-	transition: opacity 1s;
-}
-.show-in {
+.animate-hide {
 	opacity: 1;
+	transition: opacity .6s;
+}
+.animate-hide.ng-hide {
+	opacity: 0;
 }
