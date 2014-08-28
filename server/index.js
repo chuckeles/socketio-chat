@@ -1,8 +1,9 @@
 var http = require("http");
+var fs   = require("fs");
 
 // create server
 var server = http.createServer(function(req, res) {
-	console.log(req);
+
 });
 
 // listen

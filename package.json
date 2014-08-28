@@ -1,16 +1,19 @@
 {
-	"name": "socketio-chat",
-	"version": "0.0.0",
-	"private": true,
-	"description": "simple chat app",
-	"main": "index.js",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/chuckeles/socketio-chat.git"
-	},
-	"author": "chuckeles",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/chuckeles/socketio-chat/issues"
-	}
+  "name": "socketio-chat",
+  "version": "0.0.0",
+  "private": true,
+  "description": "simple chat app",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chuckeles/socketio-chat.git"
+  },
+  "author": "chuckeles",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chuckeles/socketio-chat/issues"
+  },
+  "dependencies": {
+    "express": "~4.8.6"
+  }
 }
