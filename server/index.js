@@ -22,8 +22,17 @@ http.listen(port, function() {
 io.on("connection", function(socket) {
 	console.log("client connected");
 
+	// name
+	var name = "";
+
 	// on disconnect
 	socket.on("disconnect", function() {
 		console.log("client disconnected");
+	});
+
+	// on join
+	socket.on("join", function(joinName) {
+		console.log(joinName, "joined");
+		name = joinName;
 	});
 });
