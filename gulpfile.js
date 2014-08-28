@@ -51,9 +51,11 @@ gulp.task("js", function() {
 // css concatenation and prefixing
 gulp.task("css", function() {
 	return gulp.src(input.css)
+		.pipe(plugins.sourcemaps.init())
 		.pipe(plugins.concat("style.min.css"))
 		.pipe(plugins.autoprefixer())
 		.pipe(plugins.minifyCss())
+		.pipe(plugins.sourcemaps.write())
 		.pipe(gulp.dest(output.css))
 		.pipe(browserSync.reload({ stream: true }));
 });
