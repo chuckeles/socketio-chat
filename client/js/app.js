@@ -1,10 +1,14 @@
-var app = angular.module("socketio-chat", [])
+var app = angular.module("socketio-chat", ["ngAnimate"])
 
 	// main chat controller
 	.controller("chatCtrl", function($scope) {
 		// vars
 		$scope.joined = false;
 		$scope.messages = [];
+
+		// animate name form
+		document.getElementById("name-form")
+			.classList.add("show-in");
 
 		// join function
 		$scope.join = function() {

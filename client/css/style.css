@@ -68,3 +68,11 @@ button:focus {
 	min-width: 5em;
 	color: #888;
 }
+
+.show {
+	opacity: 0;
+	transition: opacity 1s;
+}
+.show-in {
+	opacity: 1;
+}
