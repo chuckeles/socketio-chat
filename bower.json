@@ -1,8 +1,11 @@
 {
-	"name": "socketio-chat",
-	"version": "0.0.0",
-	"homepage": "https://github.com/chuckeles/socketio-chat",
-	"authors": "chuckeles",
-	"license": "MIT",
-	"private": true
+  "name": "socketio-chat",
+  "version": "0.0.0",
+  "homepage": "https://github.com/chuckeles/socketio-chat",
+  "authors": "chuckeles",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "normalize.css": "~3.0.1"
+  }
 }
