@@ -8,6 +8,7 @@ var input = {};
 input.html = "client/html/**/*";
 input.js = [
 	"bower_components/angular/angular.js",
+	"bower_components/angular-animate/angular-animate.js",
 	"client/js/**/*.js"
 ];
 input.css = [
