@@ -27,7 +27,7 @@ io.on("connection", function(socket) {
 
 	// on disconnect
 	socket.on("disconnect", function() {
-		console.log("client disconnected");
+		console.log(name || "client", "disconnected");
 
 		if (name)
 			socket.broadcast.emit("leave", name);

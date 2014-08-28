@@ -15,6 +15,13 @@
 			<input type="text" placeholder="name" data-ng-model="name">
 			<button data-ng-click="join()">join</button>
 		</div>
+		<ul class="flex-auto" data-ng-show="joined">
+			<li data-ng-repeat="message in messages"></li>
+		</ul>
+		<div class="flex" data-ng-show="joined">
+			<input type="text" placeholder="text" data-ng-model="text">
+			<button data-ng-click="send()">send</button>
+		</div>
 
 		<!-- JS -->
 		<script src="socket.io/socket.io.js"></script>
