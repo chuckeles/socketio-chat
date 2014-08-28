@@ -28,10 +28,19 @@ var app = angular.module("socketio-chat", [])
 			if (!$scope.joined || !$scope.text)
 				return;
 
-			// emit
-			$scope.socket.emit("message", {
+			// message
+			var m = {
 				name: $scope.name,
 				message: $scope.text
-			});
+			};
+
+			// emit
+			$scope.socket.emit("message", m);
+
+			// clear
+			$scope.text = "";
+
+			// add message
+			$scope.messages.push(m);
 		};
 	});
