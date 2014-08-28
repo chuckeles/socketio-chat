@@ -13,6 +13,7 @@ html {
 body {
 	background: radial-gradient(#eee, #ccc);
 	position: relative;
+	overflow: hidden;
 }
 
 .full {
