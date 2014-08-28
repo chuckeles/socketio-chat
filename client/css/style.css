@@ -16,3 +16,9 @@ body {
 	align-items: center;
 	justify-content: center;
 }
+
+input {
+	border: none;
+	background: none;
+	padding: .4em;
+}
