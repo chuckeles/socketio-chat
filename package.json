@@ -14,18 +14,20 @@
     "url": "https://github.com/chuckeles/socketio-chat/issues"
   },
   "dependencies": {
-    "express": "~4.8.6"
+    "express": "~4.8.6",
+    "socket.io": "~1.0.6"
   },
   "devDependencies": {
-    "gulp"             : "latest",
+    "gulp": "latest",
     "gulp-load-plugins": "latest",
-    "gulp-concat"      : "latest",
-    "gulp-uglify"      : "latest",
+    "gulp-concat": "latest",
+    "gulp-uglify": "latest",
+    "gulp-ng-annotate": "latest",
     "gulp-autoprefixer": "latest",
-    "gulp-if"          : "latest",
-    "gulp-minify-css"  : "latest",
-    "gulp-nodemon"     : "latest",
-    "gulp-sourcemaps"  : "latest",
-    "browser-sync"     : "latest"
+    "gulp-if": "latest",
+    "gulp-minify-css": "latest",
+    "gulp-nodemon": "latest",
+    "gulp-sourcemaps": "latest",
+    "browser-sync": "latest"
   }
 }
