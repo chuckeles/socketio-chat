@@ -2,7 +2,10 @@ var express = require("express");
 var server = express();
 
 // routes
-server.use(express.static("client"));
+server.get("/", function(req, res) {
+	res.sendfile("client/html/index.html");
+});
+server.use(express.static("client/build"));
 
 // listen
 var port = 2500;
