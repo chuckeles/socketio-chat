@@ -20,5 +20,5 @@ http.listen(port, function() {
 
 // on connection
 io.on("connection", function(socket) {
-	console.log("new guy connected");
+	console.log("user connected");
 });
