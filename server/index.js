@@ -20,5 +20,10 @@ http.listen(port, function() {
 
 // on connection
 io.on("connection", function(socket) {
-	console.log("user connected");
+	console.log("client connected");
+
+	// on disconnect
+	socket.on("disconnect", function() {
+		console.log("client disconnected");
+	});
 });
